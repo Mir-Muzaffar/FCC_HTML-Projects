@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Review</title>
+</head>
+
+<body>
+  <h1 id="title">Restaurant Review </h1>
+  <p id="description">Thank you for choosing our restaurant!, please fill out this review form for improvment
+    and customer service. </p>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Customer Detail</legend>
+
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" required placeholder="Enter your name" ></input>
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" required placeholder="Enter your email" >
+
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" required placeholder="Enter" min="3" max="100">
+    </fieldset>
+
+    <fieldset>
+      <legend>Review</legend>
+      <label for="food">How was the food?</label>
+      <select id="dropdown" name="food">
+       <option value="excellent" selected>Excellent</option>
+      <option value="very good">Very Good</option>
+       <option value="satisfactory">Satisfactory</option>
+      <option value="poor">Poor</option>
+     </select>
+
+
+      <label for="service">How was the Service?</label>
+      <select name="service" id="service">
+      <option value="excellent" selected>Excellent</option>
+      <option value="very good">Very Good</option>
+       <option value="satisfactory">Satisfactory</option>
+      <option value="poor">Poor</option>
+     </select>
+
+      <label for="rating">Rating?</label>
+      <select name="rating" id="rating">
+       <option value="1 star">*</option>
+       <option value="2 star">**</option>
+       <option value="3 star">***</option>
+       <option value="4 star">****</option>
+       <option value="5 star" >*****</option>
+     </select>
+
+
+      <label for="ambience">How was the Ambience</label>
+      <select name="ambience" id="ambience">
+    <option value="excellent" selected>Excellent</option>
+      <option value="very good">Very Good</option>
+       <option value="satisfactory">Satisfactory</option>
+      <option value="poor">Poor</option>
+     </select>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>What would you like us to improve?</legend>
+
+
+      <input
+    type="checkbox"
+    id="lighting"
+    name="choice"
+    value="lighting">
+      <label for="lighting">Lighting level</label>
+
+      <input
+    type="checkbox"
+    id="cleanliness"
+    name="choice"
+    value="cleanliness">
+      <label for="cleanliness">Cleanliness</label>
+
+      <input
+    type="checkbox"
+    id="seating"
+    name="choice"
+    value="seating">
+      <label for="seating">Seating and Table Spacing</label>
+
+      <input
+    type="checkbox"
+    id="staff"
+    name="choice"
+    value="staff">
+      <label for="staff">Staff</label>
+
+      <input
+    type="checkbox"
+    id="time"
+    name="choice"
+    value="time">
+      <label for="time">Waiting Time</label>
+
+      <input
+    type="checkbox"
+    id="hospitality"
+    name="choice"
+    value="hospitality">
+      <label for="hospitality">Hospitality</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Recommendation</legend>
+
+
+      <p id="recommendation">Would you recommend us to your loved ones?</p>
+      <input type="radio" id="yes-rec" value="yes" name="recommendation">
+      <label for="yes-rec" >Yes</label>
+
+      <input type="radio" id="no-rec" value="no" name="recommendation">
+      <label for="no-rec" >No</label>
+
+
+      <p id="visit">Would you love you visit us again?</p>
+      <input type="radio" id="yes-vis" value="yes" name="visit">
+      <label for="yes-vis" >Yes</label>
+
+      <input type="radio" id="no-vis" value="no" name="visit">
+      <label for="no-vis" >No</label>
+
+    </fieldset>
+
+    <p>Any other comments or recommendations?</p>
+    
+    <textarea cols="30" rows="6" id="comments">Enter comments here</textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+
+</body>
+
+</html>
